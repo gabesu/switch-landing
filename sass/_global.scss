@@ -90,6 +90,7 @@ footer {
       width: 311px;
       position: absolute;
       transform: rotate(-5deg);
+      transition: all 200ms ease-out;
     }
     img:nth-child(2) {
       left: 44px;
