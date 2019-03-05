@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "switch-font", Fallback, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: $switch-grey;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: $switch-purple;
+  }
+}
+section,
+footer {
+  width: 100%;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.hero-content {
+  height: 600px;
+  padding-top: 50px;
+  .phone {
+    grid-column: 3/6;
+    grid-row: 1/6;
+    img {
+      width: 100%;
+    }
+  }
+  .phone-bg {
+    grid-column: 1/8;
+    grid-row-start: 3;
+    height: 300px;
+    background: $switch-light-purple;
+  }
+  .caption {
+    grid-column: 7/13;
+    grid-row: 2/6;
+    h1 {
+      text-transform: uppercase;
+      font-family: "switch-font-bold", sans-serif;
+      font-weight: bold;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.switch-account {
+  height: 400px;
+  padding-top: 100px;
+  .content {
+    background: $switch-light-grey;
+    padding: 40px;
+    grid-column: 2/9;
+    grid-row: 2;
+    .list {
+      li {
+        padding: 5px 0;
+        padding-left: 40px;
+        background: url(../images/icon-tick-circle.svg) no-repeat;
+        background-position: left center;
+      }
+    }
+    .info {
+      font-size: 10px;
+      padding-left: 40px;
+      display: inline-block;
+      line-height: 16px;
+      padding-top: 10px;
+    }
+  }
+  .cards {
+    grid-column: 7/12;
+    grid-row: 1/6;
+    position: relative;
+    img {
+      width: 311px;
+      position: absolute;
+      transform: rotate(-5deg);
+    }
+    img:nth-child(2) {
+      left: 44px;
+      top: -44px;
+    }
+    img:nth-child(1) {
+      left: 88px;
+      top: -88px;
+    }
+  }
+}
+
+.why-switch {
+  padding-top: 200px;
+  height: 1000px;
+  position: relative;
+  .bg-rect {
+    background: $switch-light-grey;
+    grid-column: 1/4;
+    grid-row: 1;
+    margin-left: -30px;
+    margin-top: -20px;
+  }
+  h1 {
+    grid-row: 1/4;
+    grid-column: 1/6;
+  }
+  .image {
+    grid-row: 3;
+    grid-column: 1/6;
+    margin-left: -50px;
+    img {
+      width: 100%;
+    }
+  }
+  .reasons {
+    grid-column: 7/13;
+    grid-row: 1/3;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 20px;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.pricing-content {
+  height: 600px;
+  .image {
+    grid-row: 3/7;
+    grid-column: 1/6;
+    margin-left: -50px;
+    img {
+      width: 100%;
+    }
+  }
+  .intro {
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+  .free {
+    background: $switch-dark;
+    color: white;
+    grid-column: 5/9;
+    grid-row: 1/4;
+    margin-right: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    h2 {
+      color: white;
+    }
+    li {
+      padding-left: 30px;
+      margin-bottom: 20px;
+      background: url(../images/tick-purple.svg) no-repeat;
+      background-position: left center;
+    }
+  }
+  .paid {
+    @extend .free;
+    background: $switch-light-grey;
+    grid-column: 9/13;
+    grid-row: 1/5;
+    color: $switch-grey;
+    h2 {
+      color: $switch-dark;
+    }
+    li {
+      background-position: left 10px;
+    }
+  }
+}
+.about {
+  background: $switch-dark;
+  padding: 100px 0;
+  h1 {
+    color: white;
+  }
+  .about-switch {
+    grid-row: 1/7;
+    grid-column: 1/6;
+    color: white;
+  }
+  .switch-partners {
+    grid-row: 1/7;
+    grid-column: 7/13;
+    color: white;
+  }
+}
+.points {
+  padding: 100px 0;
+  h1 {
+    grid-row: 1/7;
+    grid-column: 1/5;
+  }
+  .telegram {
+    grid-row: 5;
+    grid-column: 1/6;
+    a {
+      padding-left: 25px;
+      background: url(../images/telegram.svg) no-repeat;
+      background-size: 20px;
+      background-position: left center;
+      display: inline-block;
+      color: #2aa0d9;
+    }
+  }
+  .list {
+    grid-row: 1/7;
+    grid-column: 6/13;
+  }
+  .controls {
+    display: inline-block;
+    margin-top: 20px;
+    .arrow {
+      cursor: pointer;
+
+      .icon {
+        width: 10px;
+        fill: $switch-grey;
+        &:hover {
+          fill: $switch-dark !important;
+        }
+      }
+      &.right {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+.footer {
+  background: $switch-light-grey;
+  padding: 100px 0;
+  .links {
+    margin-left: 40px;
+    a {
+      color: $switch-grey;
+      &:hover {
+        color: $switch-purple;
+      }
+    }
+  }
+}

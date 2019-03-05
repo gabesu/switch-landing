@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "switch-font";
+  src: url("../fonts/gt-walsheim-web.ttf");
+}
+@font-face {
+  font-family: "switch-font-bold";
+  src: url("../fonts/gt-walsheim-bold-web.ttf");
+}
+
+h1 {
+  font-family: "switch-font";
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 20px;
+  color: $switch-dark;
+  text-transform: capitalize;
+  &.alt {
+    color: white;
+  }
+}
+h3 {
+  font-family: "switch-font-bold";
+  font-size: 15px;
+  color: $switch-dark;
+}
+h2 {
+  font-family: "switch-font-bold";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $switch-dark;
+  margin-bottom: 10px;
+}
