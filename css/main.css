@@ -287,7 +287,8 @@ footer {
     margin-left: -50px;
     background: url(../images/1.png) no-repeat;
     background-size: cover;
-    clip-path: inset(0 100% 0 0); }
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0); }
   .why-switch .reasons {
     grid-column: 7/13;
     grid-row: 1/3; }

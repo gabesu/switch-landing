@@ -78,6 +78,7 @@ whyTl
   .from(".why-switch h1", 0.5, { y: 20, opacity: 0 })
   .to(".why-switch .image", 1, {
     clipPath: "inset(0% 0% 0% 0%)",
+    webkitClipPath: "inset(0% 0% 0% 0%)",
     ease: Power4.easeOut
   })
   .staggerFrom(".reasons li", 0.5, { y: 100, opacity: 0 }, 0.1);
