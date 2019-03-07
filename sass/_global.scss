@@ -66,6 +66,7 @@ footer {
     padding: 40px;
     grid-column: 2/9;
     grid-row: 2;
+    transform-origin: right center;
     .list {
       li {
         padding: 5px 0;
@@ -113,18 +114,20 @@ footer {
     grid-row: 1;
     margin-left: -30px;
     margin-top: -20px;
+    transform-origin: left center;
   }
   h1 {
     grid-row: 1/4;
     grid-column: 1/6;
   }
   .image {
-    grid-row: 3;
+    grid-row: 2/5;
+    margin-top: 40px;
     grid-column: 1/6;
     margin-left: -50px;
-    img {
-      width: 100%;
-    }
+    background: url(../images/1.png) no-repeat;
+    background-size: cover;
+    clip-path: inset(0 100% 0 0);
   }
   .reasons {
     grid-column: 7/13;
