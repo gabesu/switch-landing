@@ -153,10 +153,12 @@ table {
 
 @font-face {
   font-family: "switch-font";
-  src: url("../fonts/gt-walsheim-web.ttf"); }
+  src: url("../gt-walsheim-web.0eafece7.ttf"); }
+
 @font-face {
   font-family: "switch-font-bold";
-  src: url("../fonts/gt-walsheim-bold-web.ttf"); }
+  src: url("../gt-walsheim-bold-web.92a6462f.ttf"); }
+
 h1 {
   font-family: "switch-font";
   font-size: 36px;
@@ -242,7 +244,7 @@ footer {
     .switch-account .content .list li {
       padding: 5px 0;
       padding-left: 40px;
-      background: url(../images/icon-tick-circle.svg) no-repeat;
+      background: url(../icon-tick-circle.aa8b6a14.svg) no-repeat;
       background-position: left center; }
     .switch-account .content .info {
       font-size: 10px;
@@ -285,7 +287,7 @@ footer {
     margin-top: 40px;
     grid-column: 1/6;
     margin-left: -50px;
-    background: url(../images/1.png) no-repeat;
+    background: url(../1.a7f2b1ea.png) no-repeat;
     background-size: cover;
     clip-path: inset(0 100% 0 0);
     -webkit-clip-path: inset(0 100% 0 0); }
@@ -324,7 +326,7 @@ footer {
     .pricing-content .free li, .pricing-content .paid li {
       padding-left: 30px;
       margin-bottom: 20px;
-      background: url(../images/tick-purple.svg) no-repeat;
+      background: url(../tick-purple.d33ffb83.svg) no-repeat;
       background-position: left center; }
   .pricing-content .paid {
     background: #eff7f9;
@@ -360,7 +362,7 @@ footer {
     grid-column: 1/6; }
     .points .telegram a {
       padding-left: 25px;
-      background: url(../images/telegram.svg) no-repeat;
+      background: url(../telegram.ea5235a1.svg) no-repeat;
       background-size: 20px;
       background-position: left center;
       display: inline-block;
@@ -444,4 +446,5 @@ footer {
   transform-origin: center center;
   z-index: 10000000; }
 
-/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=/switch-landing.e31bb0bc.css.map */
