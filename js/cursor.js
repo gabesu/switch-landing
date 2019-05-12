@@ -29,7 +29,6 @@ document.addEventListener("wheel", e => {
 });
 
 document.addEventListener("mousemove", e => {
-  // console.log(scrollDistance);
   let x2 = e.clientX,
     y2 = e.clientY,
     x1 = windowWidth / 2,
@@ -50,12 +49,11 @@ document.addEventListener("mousemove", e => {
 
 // link hover animation to shrink cursor size
 let links = document.getElementsByTagName("a");
-// console.log(links);
+
 for (let i = 0; i < links.length; i++) {
   const link = links[i];
   // Shrink cursor on mouse over
   link.addEventListener("mouseover", e => {
-    console.log(e.target, myCursor);
     myCursor.style.width = "4px";
     myCursor.style.height = "4px";
 

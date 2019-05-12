@@ -12,7 +12,7 @@ accountTl
   .staggerFrom(".switch-account .card", 0.3, { y: 100, opacity: 0 }, 0.1)
   .from(".switch-account .info", 0.3, { y: 10, opacity: 0 }, "+=0.5");
 
-let accountController = new ScrollMagic.Controller({ addIndicators: true });
+let accountController = new ScrollMagic.Controller({ addIndicators: false });
 let accountScene = new ScrollMagic.Scene({
   triggerElement: ".switch-account .content",
   triggerHook: 0.6,

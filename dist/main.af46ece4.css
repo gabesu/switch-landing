@@ -235,78 +235,51 @@ footer {
   grid-template-rows: repeat(6, 1fr);
 }
 
+.hero {
+  background: url("bg.cbdaacbf.svg") no-repeat;
+  background-size: cover;
+}
+
 .hero-content {
   height: 600px;
   padding-top: 50px;
 }
 .hero-content .phone {
-  grid-column: 3/6;
+  grid-column: 9/12;
   grid-row: 1/6;
 }
 .hero-content .phone img {
   width: 100%;
-}
-.hero-content .phone-bg {
-  grid-column: 1/8;
-  grid-row-start: 3;
-  height: 300px;
-  background: #f0e9ff;
+  position: relative;
+  transform: rotate(-15deg);
 }
 .hero-content .caption {
-  grid-column: 7/13;
+  grid-column: 1/8;
   grid-row: 2/6;
 }
 .hero-content .caption h1 {
   text-transform: uppercase;
   font-family: "switch-font-bold", sans-serif;
   font-weight: bold;
+  color: white;
 }
 .hero-content .caption p {
   padding-bottom: 20px;
+  color: #f0e9ff;
 }
 
-.switch-account {
-  height: 400px;
-  padding-top: 100px;
+.account {
+  text-align: center;
+  margin-top: 100px;
 }
-.switch-account .content {
-  background: #eff7f9;
-  padding: 40px;
-  grid-column: 2/9;
-  grid-row: 2;
-  transform-origin: right center;
+.account .cards {
+  width: 150px;
+  margin-bottom: 20px;
 }
-.switch-account .content .list li {
-  padding: 5px 0;
-  padding-left: 40px;
-  background: url("icon-tick-circle.aa8b6a14.svg") no-repeat;
-  background-position: left center;
-}
-.switch-account .content .info {
-  font-size: 10px;
-  padding-left: 40px;
-  display: inline-block;
-  line-height: 16px;
-  padding-top: 10px;
-}
-.switch-account .cards {
-  grid-column: 7/12;
-  grid-row: 1/6;
-  position: relative;
-}
-.switch-account .cards img {
-  width: 311px;
-  position: absolute;
-  transform: rotate(-5deg);
-  transition: all 200ms ease-out;
-}
-.switch-account .cards img:nth-child(2) {
-  left: 44px;
-  top: -44px;
-}
-.switch-account .cards img:nth-child(1) {
-  left: 88px;
-  top: -88px;
+.account p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .why-switch {
@@ -508,6 +481,7 @@ footer {
   font-family: "switch-font-bold", sans-serif;
   position: relative;
   transition: all 200ms ease-out;
+  border: none;
 }
 .button:hover {
   color: white;
@@ -528,6 +502,16 @@ footer {
   pointer-events: none;
   transform-origin: center center;
   z-index: 10000000;
+}
+
+.input-text {
+  border: none;
+  padding: 0 20px;
+  line-height: 40px;
+  outline: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: "switch-font-bold", sans-serif;
 }
 
 
