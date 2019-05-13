@@ -239,11 +239,11 @@ table {
 
 @font-face {
   font-family: "switch-font";
-  src: url("./fonts/gt-walsheim-web.ttf");
+  src: url("gt-walsheim-web.0eafece7.ttf");
 }
 @font-face {
   font-family: "switch-font-bold";
-  src: url("./fonts/gt-walsheim-bold-web.ttf");
+  src: url("gt-walsheim-bold-web.92a6462f.ttf");
 }
 h1 {
   font-family: "switch-font";
@@ -307,7 +307,7 @@ footer {
 }
 
 .hero {
-  background: url("./images/bg.svg") no-repeat;
+  background: url("bg.cbdaacbf.svg") no-repeat;
   background-size: cover;
 }
 
@@ -384,7 +384,7 @@ footer {
 .pricing-content .free li, .pricing-content .paid li {
   padding-left: 30px;
   margin-bottom: 20px;
-  background: url("./images/tick-purple.svg") no-repeat;
+  background: url("tick-purple.d33ffb83.svg") no-repeat;
   background-position: left center;
 }
 .pricing-content .paid {
@@ -413,7 +413,7 @@ footer {
 }
 .points .telegram a {
   padding-left: 25px;
-  background: url("./images/telegram.svg") no-repeat;
+  background: url("telegram.ea5235a1.svg") no-repeat;
   background-size: 20px;
   background-position: left center;
   display: inline-block;
@@ -573,4 +573,7 @@ footer {
   margin-left: 30px;
 }
 
-/*# sourceMappingURL=main.css.map */
+
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */

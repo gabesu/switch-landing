@@ -4,8 +4,8 @@
 html,
 body {
   font-family: "switch-font", Fallback, sans-serif;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 32px;
   color: $switch-grey;
 }
 
@@ -64,11 +64,11 @@ footer {
   text-align: center;
   margin-top: 100px;
   .cards {
-    width: 100px;
+    width: 50px;
     margin-bottom: 20px;
   }
   p {
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
   }
@@ -120,23 +120,6 @@ footer {
     }
   }
 }
-.about {
-  background: $switch-dark;
-  padding: 100px 0;
-  h1 {
-    color: white;
-  }
-  .about-switch {
-    grid-row: 1/7;
-    grid-column: 1/6;
-    color: white;
-  }
-  .switch-partners {
-    grid-row: 1/7;
-    grid-column: 7/13;
-    color: white;
-  }
-}
 .points {
   padding: 100px 0;
   h1 {
@@ -176,6 +159,7 @@ footer {
 
 .partners {
   background: $switch-light-grey;
+  margin-top: 50px;
   padding: 100px 0;
   .switch-partners .row {
     padding: 50px;
