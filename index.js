@@ -4,6 +4,4 @@
 // import "./js/animations/why";
 
 import Glide from "@glidejs/glide";
-
-new Glide(".glide").mount();
 new Glide(".glide-two").mount();

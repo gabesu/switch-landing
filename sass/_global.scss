@@ -73,53 +73,6 @@ footer {
     margin: 0 auto;
   }
 }
-.pricing-content {
-  margin-top: 100px;
-  height: 600px;
-  .image {
-    grid-row: 3/7;
-    grid-column: 1/6;
-    margin-left: -50px;
-    img {
-      width: 100%;
-    }
-  }
-  .intro {
-    grid-row: 1;
-    grid-column: 1/4;
-  }
-  .free {
-    background: $switch-dark;
-    color: white;
-    grid-column: 5/9;
-    grid-row: 1/4;
-    margin-right: 10px;
-    padding: 30px;
-    border-radius: 5px;
-    h2 {
-      color: white;
-    }
-    li {
-      padding-left: 30px;
-      margin-bottom: 20px;
-      background: url("./images/tick-purple.svg") no-repeat;
-      background-position: left center;
-    }
-  }
-  .paid {
-    @extend .free;
-    background: $switch-light-grey;
-    grid-column: 9/13;
-    grid-row: 1/5;
-    color: $switch-grey;
-    h2 {
-      color: $switch-dark;
-    }
-    li {
-      background-position: left 10px;
-    }
-  }
-}
 .points {
   padding: 100px 0;
   h1 {
@@ -173,5 +126,19 @@ footer {
   margin-top: 20px;
   img {
     height: 40px;
+  }
+}
+.pricing {
+  padding: 100px 0;
+  .prices {
+    color: $switch-dark;
+  }
+  .caption {
+    width: 50%;
+    padding-right: 30px;
+  }
+  td {
+    padding: 20px 40px 20px 0;
+    border-bottom: 1px solid $switch-light-grey;
   }
 }

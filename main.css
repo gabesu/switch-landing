@@ -353,53 +353,6 @@ footer {
   margin: 0 auto;
 }
 
-.pricing-content {
-  margin-top: 100px;
-  height: 600px;
-}
-.pricing-content .image {
-  grid-row: 3/7;
-  grid-column: 1/6;
-  margin-left: -50px;
-}
-.pricing-content .image img {
-  width: 100%;
-}
-.pricing-content .intro {
-  grid-row: 1;
-  grid-column: 1/4;
-}
-.pricing-content .free, .pricing-content .paid {
-  background: #170e32;
-  color: white;
-  grid-column: 5/9;
-  grid-row: 1/4;
-  margin-right: 10px;
-  padding: 30px;
-  border-radius: 5px;
-}
-.pricing-content .free h2, .pricing-content .paid h2 {
-  color: white;
-}
-.pricing-content .free li, .pricing-content .paid li {
-  padding-left: 30px;
-  margin-bottom: 20px;
-  background: url("./images/tick-purple.svg") no-repeat;
-  background-position: left center;
-}
-.pricing-content .paid {
-  background: #eff7f9;
-  grid-column: 9/13;
-  grid-row: 1/5;
-  color: #5b5b5e;
-}
-.pricing-content .paid h2 {
-  color: #170e32;
-}
-.pricing-content .paid li {
-  background-position: left 10px;
-}
-
 .points {
   padding: 100px 0;
 }
@@ -455,6 +408,21 @@ footer {
 }
 .app-icons img {
   height: 40px;
+}
+
+.pricing {
+  padding: 100px 0;
+}
+.pricing .prices {
+  color: #170e32;
+}
+.pricing .caption {
+  width: 50%;
+  padding-right: 30px;
+}
+.pricing td {
+  padding: 20px 40px 20px 0;
+  border-bottom: 1px solid #eff7f9;
 }
 
 .navigation {
