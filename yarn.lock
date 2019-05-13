@@ -566,6 +566,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@glidejs/glide@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.3.0.tgz#5d0a0cddad863a66272a15826919c64c60351094"
+  integrity sha512-8rs4yGHRlCOvubBM7RyB4sijzl0q5ST7Yvv9frSb8xIRWdztoY7lP/uMMc9GBEM0up5MvxIYWOXig1b5gT/j2A==
+
 "@iarna/toml@^2.2.0":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"

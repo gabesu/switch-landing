@@ -11,6 +11,7 @@
   position: relative;
   transition: all 200ms ease-out;
   border: none;
+  cursor: pointer;
   &:hover {
     color: white;
     background: darken($switch-purple, 5%);

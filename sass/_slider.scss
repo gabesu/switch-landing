@@ -1,0 +1,41 @@
+.slider {
+  margin-top: 100px;
+  width: 80%;
+}
+.slide {
+  display: flex;
+  justify-content: space-between;
+  .caption {
+    width: 60%;
+    align-self: center;
+  }
+  .slide-image {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.controls {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  &.relative {
+    transform: translateY(-150px);
+  }
+  .arrow {
+    cursor: pointer;
+
+    .icon {
+      width: 10px;
+      fill: $switch-grey;
+      &:hover {
+        fill: $switch-purple !important;
+      }
+    }
+    &.right {
+      margin-left: 30px;
+    }
+  }
+}
