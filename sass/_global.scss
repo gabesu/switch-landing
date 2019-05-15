@@ -21,7 +21,12 @@ footer {
 }
 .container {
   width: 1000px;
+  position: relative;
   margin: 0 auto;
+  @include mobile {
+    width: 100%;
+    padding: 0 40px;
+  }
 }
 .grid {
   display: grid;
@@ -30,14 +35,17 @@ footer {
 }
 .hero {
   background: url("./images/bg.svg") no-repeat;
+  background-position: top center;
   background-size: cover;
 }
 .hero-content {
-  height: 600px;
   padding-top: 50px;
   .phone {
     grid-column: 9/12;
     grid-row: 1/6;
+    @include mobile {
+      display: none;
+    }
     img {
       width: 100%;
       position: relative;
@@ -46,7 +54,10 @@ footer {
   }
   .caption {
     grid-column: 1/8;
-    grid-row: 2/6;
+    grid-row: 1/6;
+    @include mobile {
+      grid-column: 1/13;
+    }
     h1 {
       text-transform: uppercase;
       font-family: "switch-font-bold", sans-serif;
@@ -76,31 +87,44 @@ footer {
 .points {
   padding: 100px 0;
   h1 {
-    grid-row: 1/7;
-    grid-column: 1/5;
-  }
-  .telegram {
-    grid-row: 5;
-    grid-column: 1/6;
-    a {
-      padding-left: 25px;
-      background: url("./images/telegram.svg") no-repeat;
-      background-size: 20px;
-      background-position: left center;
-      display: inline-block;
-      color: #2aa0d9;
+    width: 30%;
+    @include mobile {
+      text-align: center;
+      width: 100%;
     }
   }
   .list {
-    grid-row: 1/7;
-    grid-column: 6/13;
+    width: 60%;
+    @include mobile {
+      width: 100%;
+      padding: 0 50px;
+    }
   }
 }
 .footer {
   background: $switch-grey;
   padding: 100px 0;
+  @include mobile {
+    padding: 50px 0;
+  }
+  .logo {
+    order: 1;
+    @include mobile {
+      order: 2;
+      margin-top: 40px;
+    }
+  }
+  .quick-links {
+    order: 2;
+    @include mobile {
+      order: 1;
+    }
+  }
   .links {
     margin-left: 40px;
+    @include mobile {
+      margin-left: 0;
+    }
     a {
       color: white;
       &:hover {
@@ -116,9 +140,16 @@ footer {
   padding: 100px 0;
   .switch-partners .row {
     padding: 50px;
+    @include mobile {
+      padding: 0;
+    }
   }
   .switch-partners img {
     height: 30px;
+    align-self: center;
+    @include mobile {
+      margin: 20px 0;
+    }
   }
 }
 
@@ -130,15 +161,35 @@ footer {
 }
 .pricing {
   padding: 100px 0;
+  @include mobile {
+    padding: 50px 0;
+  }
   .prices {
     color: $switch-dark;
   }
   .caption {
     width: 50%;
     padding-right: 30px;
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  table {
+    @include mobile {
+      margin-top: 40px;
+    }
   }
   td {
     padding: 20px 40px 20px 0;
     border-bottom: 1px solid $switch-light-grey;
   }
+  .app-icons {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+.download {
+  margin: 100px 0;
 }

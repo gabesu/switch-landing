@@ -1,17 +1,53 @@
 .slider {
   margin: 100px;
   width: 80%;
+  @include mobile {
+    width: 100%;
+    margin: 0;
+  }
 }
 .slide {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  @include mobile {
+    flex-direction: column;
+  }
+  &:nth-of-type(2n) {
+    justify-content: flex-end;
+
+    .caption {
+      order: 1;
+    }
+
+    .slide-image {
+      order: 2;
+    }
+
+    @include mobile {
+      .caption {
+        order: 2;
+      }
+
+      .slide-image {
+        order: 1;
+      }
+    }
+  }
   .caption {
     width: 60%;
     align-self: center;
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
   }
   .slide-image {
     width: 30%;
+    @include mobile {
+      width: 50%;
+      align-self: center;
+    }
     img {
       width: 100%;
     }

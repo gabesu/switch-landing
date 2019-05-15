@@ -17,9 +17,20 @@
 .flex {
   display: flex;
   justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+  &.alt {
+    @include mobile {
+      flex-direction: row;
+    }
+  }
 }
 .width-50 {
   width: 50%;
+  @include mobile {
+    width: 100%;
+  }
 }
 .width-100 {
   width: 100%;
