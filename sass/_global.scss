@@ -145,10 +145,13 @@ footer {
     }
   }
   .switch-partners img {
-    height: 30px;
+    height: 40px;
     align-self: center;
     @include mobile {
       margin: 20px 0;
+    }
+    &.double {
+      height: 80px;
     }
   }
 }

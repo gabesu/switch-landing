@@ -14,9 +14,11 @@
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
-
-    .menu a.button {
-      color: white;
+    a {
+      color: $switch-dark !important;
+    }
+    .btn-download {
+      color: white !important;
     }
   }
   .logo {
@@ -43,7 +45,10 @@
       display: none !important;
     }
     &.btn-download {
-      display: block !important;
+      display: inline-block !important;
+      a {
+        color: white !important;
+      }
     }
   }
   .menu a {
