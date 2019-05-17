@@ -662,7 +662,7 @@ footer {
   }
 }
 .slide:nth-of-type(2n) {
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .slide:nth-of-type(2n) .caption {
   order: 1;
