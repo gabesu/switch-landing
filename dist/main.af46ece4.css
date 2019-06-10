@@ -254,11 +254,11 @@ table {
 
 @font-face {
   font-family: "switch-font";
-  src: url("./fonts/gt-walsheim-web.ttf");
+  src: url("/gt-walsheim-web.0eafece7.ttf");
 }
 @font-face {
   font-family: "switch-font-bold";
-  src: url("./fonts/gt-walsheim-bold-web.ttf");
+  src: url("/gt-walsheim-bold-web.92a6462f.ttf");
 }
 h1 {
   font-family: "switch-font";
@@ -329,7 +329,7 @@ footer {
 }
 
 .hero {
-  background: url("./images/bg.svg") no-repeat;
+  background: url("/bg.cbdaacbf.svg") no-repeat;
   background-position: top center;
   background-size: cover;
 }
@@ -728,4 +728,7 @@ footer {
   margin-left: 30px;
 }
 
-/*# sourceMappingURL=main.css.map */
+
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */
