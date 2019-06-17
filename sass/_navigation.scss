@@ -70,9 +70,49 @@
 
   .mobile-menu {
     display: none;
+    cursor: pointer;
 
     @media screen and (max-width: 772px) {
       display: block;
     }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  background: white;
+  height: 100%;
+  text-align: center;
+
+  &--actions {
+    margin: 20% 0;
+
+    & li {
+      margin: 20px 0;
+    }
+  }
+}
+
+.show-mobile-nav {
+  display: block !important;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
   }
 }
