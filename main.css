@@ -590,6 +590,19 @@ footer {
 .navigation .menu a:hover {
   color: #7b42f6;
 }
+@media screen and (max-width: 772px) {
+  .navigation .menu {
+    display: none;
+  }
+}
+.navigation .mobile-menu {
+  display: none;
+}
+@media screen and (max-width: 772px) {
+  .navigation .mobile-menu {
+    display: block;
+  }
+}
 
 .button {
   padding: 0 20px;

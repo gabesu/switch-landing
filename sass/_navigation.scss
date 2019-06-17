@@ -62,4 +62,17 @@
       color: $switch-purple;
     }
   }
+  .menu {
+    @media screen and (max-width: 772px) {
+      display: none;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+
+    @media screen and (max-width: 772px) {
+      display: block;
+    }
+  }
 }
